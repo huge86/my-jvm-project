@@ -15,6 +15,7 @@
         <module>spark-demo</module>
         <module>clickhouse-demo</module>
         <module>spring-demo</module>
+        <module>springmvc-demo</module>
     </modules>
 
     <properties>
