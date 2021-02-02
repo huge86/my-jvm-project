@@ -1,0 +1,22 @@
+1、Maven普通项目中，尽量不要使用log4j,jar包需要放到WEB-INF-lib目录下
+2、引入依赖：slf4j-api、slf4j-simple，这两个就可以了，引入其他依赖多了，会jar包冲突
+3、log4j.properties放到resources目录下即可。
+
+
+        <slf4j-api.version>1.7.25</slf4j-api.version>
+        <slf4j-simple.version>1.7.25</slf4j-simple.version>
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j-simple.version}</version>
+            <scope>compile</scope>
+        </dependency>
