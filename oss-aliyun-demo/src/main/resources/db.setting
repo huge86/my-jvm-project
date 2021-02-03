@@ -1,0 +1,18 @@
+#mysql
+#url = jdbc:mysql://localhost:3306/mytest?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+#driver =com.mysql.cj.jdbc.Driver
+
+
+#sqlserver
+url = jdbc:sqlserver://103.89.185.118:51545; DatabaseName=USER00012019
+driver =com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+user = test
+pass =
+## 可选配置
+# 是否在日志中显示执行的SQL
+showSql = true
+# 是否格式化显示的SQL
+formatSql = true
+# 是否显示SQL参数
+showParams = true
