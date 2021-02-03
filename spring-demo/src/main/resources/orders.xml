@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--通过反射创建实例-->
+    <bean  id="order" class="cn.huzunjie.spring5.beans.Order">
+<!--        <constructor-arg name="name" value="苏宁易购2021-02-01"></constructor-arg>有的版本不允许使用name属性-->
+        <constructor-arg index="0" value="北国商城2020-12-31"></constructor-arg>
+        <constructor-arg index="1" value="建设南大街206号"></constructor-arg>
+    </bean>
+</beans>

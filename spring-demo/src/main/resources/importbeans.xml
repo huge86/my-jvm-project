@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--通过反射创建实例-->
+<!--    创建service和dao对象-->
+    <bean  id="userService" class="cn.huzunjie.spring5.service.UserService">
+<!--        userService里面要注入userDao-->
+        <property name="userDao" ref="userDao"></property>
+
+    </bean>
+    <bean  id="userDao" class="cn.huzunjie.spring5.dao.impl.UserDaoImpl">
+
+
+    </bean>
+</beans>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--通过反射创建实例-->
+    <bean  id="book" class="cn.huzunjie.spring5.beans.Book">
+<!--        name:类里面的属性名称；value:将被注入的属性值-->
+        <property name="name" value="Java编程思想"></property>
+        <property name="author" value="特朗普"></property>
+
+    </bean>
+</beans>
