@@ -18,6 +18,7 @@
         <module>springmvc-demo</module>
         <module>oss-aliyun-demo</module>
         <module>jdbc-demo</module>
+        <module>bigdata-demo</module>
     </modules>
 
     <properties>
