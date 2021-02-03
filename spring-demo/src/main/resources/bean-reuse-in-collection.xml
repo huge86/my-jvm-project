@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    <!--通过反射创建实例-->
+    <!-- 把集合注入部分提取出来，便于复用,使用util标签完成list集合注入提取-->
+    <util:list id="hobbyList">
+        <value>阅读</value>
+        <value>唱歌</value>
+        <value>健身</value>
+    </util:list>
+
+    <!--提取list集合类型属性，注入使用-->
+    <bean  id="hobby" class="cn.huzunjie.spring5.beans.Hobby">
+        <property name="hobby" ref="hobbyList"></property>
+    </bean>
+    
+</beans>

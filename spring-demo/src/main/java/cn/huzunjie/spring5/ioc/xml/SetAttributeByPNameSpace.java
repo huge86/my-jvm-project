@@ -1,10 +1,8 @@
 package cn.huzunjie.spring5.ioc.xml;
 
 import cn.huzunjie.spring5.beans.Book;
-import cn.huzunjie.spring5.beans.User;
 import org.junit.Test;
 import org.springframework.beans.factory.BeanFactory;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -13,13 +11,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @Version 1.0
  */
 
-public class setAttributeBySetter {
+public class SetAttributeByPNameSpace {
     @Test
-    public void testUserBean(){
+    public void testBookBean(){
 
 
         //BeanFactory不会在加载配置文件的时候，创建对象，在使用对象的时候，才创建
-        BeanFactory ctx = new ClassPathXmlApplicationContext("books.xml");
+        BeanFactory ctx = new ClassPathXmlApplicationContext("pnamespace.xml");
         //2. 获取配置创建的对象
         Book book = ctx.getBean("book", Book.class);
 

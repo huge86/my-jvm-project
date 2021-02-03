@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--通过反射创建实例-->
+    <bean  id="student" class="cn.huzunjie.spring5.beans.Student">
+<!--    数组类型属性注入-->
+        <property name="stringArrays">
+            <list>
+                <value>Redis从入门到精通</value>
+                <value>MySQL从入门到精通</value>
+                <value>MongoDB从入门到精通</value>
+            </list>
+        </property>
+<!--list类型属性注入-->
+        <property name="lists">
+            <list>
+                <value>苹果</value>
+                <value>橘子</value>
+                <value>香蕉</value>
+            </list>
+        </property>
+<!--        Map类型属性注入-->
+        <property name="maps">
+            <map>
+                <entry key="体育" value="篮球"></entry>
+                <entry key="乐器" value="钢琴"></entry>
+                <entry key="专业" value="软件工程"></entry>
+            </map>
+        </property>
+<!--        set类型属性注入-->
+        <property name="sets">
+            <set>
+                <value>学习</value>
+                <value>唱歌</value>
+                <value>打篮球</value>
+            </set>
+        </property>
+    </bean>
+    
+    
+</beans>

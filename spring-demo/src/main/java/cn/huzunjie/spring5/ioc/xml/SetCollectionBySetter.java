@@ -1,6 +1,7 @@
 package cn.huzunjie.spring5.ioc.xml;
 
-import cn.huzunjie.spring5.beans.Book;
+
+import cn.huzunjie.spring5.beans.Student;
 import org.junit.Test;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -11,19 +12,19 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @Version 1.0
  */
 
-public class setNullToAttributeBySetter {
+public class SetCollectionBySetter {
     @Test
-    public void testBookBean(){
+    public void testCollectionBySetter(){
 
 
         //BeanFactory不会在加载配置文件的时候，创建对象，在使用对象的时候，才创建
-        BeanFactory ctx = new ClassPathXmlApplicationContext("nullPropertyInbooks.xml");
+        BeanFactory ctx = new ClassPathXmlApplicationContext("set-collection-type.xml");
         //2. 获取配置创建的对象
-        Book book = ctx.getBean("book", Book.class);
+        Student  student = ctx.getBean("student", Student.class);
 
         //3.验证
-        System.out.println(book.getName());
-        System.out.println(book.getAuthor());
+        System.out.println(student);
+
 
 
     }

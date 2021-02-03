@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--通过反射创建实例-->
+    <bean  id="student" class="cn.huzunjie.spring5.beans.Student">
+
+<!--        注入list集合类型，值是对象-->
+        <property name="courseList">
+            <list>
+                <ref bean="course1"></ref>
+                <ref bean="course2"></ref>
+                <ref bean="course3"></ref>
+            </list>
+        </property>
+
+    </bean>
+
+<!--    创建多个course对象-->
+    <bean id="course1" class="cn.huzunjie.spring5.beans.Course">
+        <property name="cname" value="spring5框架"></property>
+    </bean>
+    <bean id="course2" class="cn.huzunjie.spring5.beans.Course">
+        <property name="cname" value="PHP7框架"></property>
+    </bean>
+    <bean id="course3" class="cn.huzunjie.spring5.beans.Course">
+        <property name="cname" value="C++数据结构"></property>
+    </bean>
+    
+    
+</beans>
