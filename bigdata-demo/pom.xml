@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>data-warehouse-demo</module>
+        <module>flink_demo</module>
     </modules>
     <artifactId>bigdata-demo</artifactId>
     <version>0.0.1</version>
