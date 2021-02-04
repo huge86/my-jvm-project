@@ -12,7 +12,6 @@
         <module>java-demo</module>
         <module>jvm-common</module>
         <module>flink-demo</module>
-        <module>spark-demo</module>
         <module>clickhouse-demo</module>
         <module>spring-demo</module>
         <module>springmvc-demo</module>
