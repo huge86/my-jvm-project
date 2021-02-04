@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--FactoryBean-->
+    <bean  id="myBean" class="cn.huzunjie.spring5.beans.MyBean">
+<!--        name:类里面的属性名称；value:将被注入的属性值-->
+<!--        <property name="cname" value="Java编程思想"></property>-->
+
+
+    </bean>
+</beans>

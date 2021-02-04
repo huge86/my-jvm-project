@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--组件扫描的配置细节
+    -->
+    <!--    示例1
+        use-default-filters="false" 表示不适用默认的过滤器，而是使用自定义的过滤器
+        context:include-filter,设置扫描哪些内容
+        org.springframework.stereotype.Controller 在包中，只扫描带Controller注解的类
+    -->
+        <context:component-scan base-package="cn/huzunjie/spring5/beans" use-default-filters="false">
+            <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        </context:component-scan>
+
+    <!--    示例2
+     没有设置 use-default-filters="false" 属性，表示扫描所有类
+     context:exclude-filter,排除扫描哪些内容
+     org.springframework.stereotype.Controller 含Controller注解的类
+ -->
+    <context:component-scan base-package="cn/huzunjie/spring5/beans" use-default-filters="false">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+
+
+</beans>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--FactoryBean-->
+    <bean  id="lifecycleBean" class="cn.huzunjie.spring5.beans.LifecycleBean" init-method="initMethod" destroy-method="destroyMethod">
+<!--        name:类里面的属性名称；value:将被注入的属性值-->
+        <property name="lname" value="bean的生命周期测试"></property>
+
+
+    </bean>
+</beans>
