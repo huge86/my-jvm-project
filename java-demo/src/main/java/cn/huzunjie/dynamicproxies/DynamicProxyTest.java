@@ -1,7 +1,7 @@
 package cn.huzunjie.dynamicproxies;
 
-import cn.huzunjie.staticProxy.interf.ClothFactory;
-import cn.huzunjie.staticProxy.interf.impl.NikeClothFactory;
+import cn.huzunjie.staticProxy.interfaces.ClothFactory;
+import cn.huzunjie.staticProxy.interfaces.impl.NikeClothFactory;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

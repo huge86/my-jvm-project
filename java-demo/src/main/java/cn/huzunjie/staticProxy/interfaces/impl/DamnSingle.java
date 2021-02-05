@@ -1,6 +1,6 @@
-package cn.huzunjie.staticProxy.interf.impl;
+package cn.huzunjie.staticProxy.interfaces.impl;
 
-import cn.huzunjie.staticProxy.interf.NvShen;
+import cn.huzunjie.staticProxy.interfaces.NvShen;
 
 /**
  * @Author HuZunJie

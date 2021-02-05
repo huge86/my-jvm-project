@@ -1,6 +1,6 @@
-package cn.huzunjie.staticProxy.interf.impl;
+package cn.huzunjie.staticProxy.interfaces.impl;
 
-import cn.huzunjie.staticProxy.interf.Litigation;
+import cn.huzunjie.staticProxy.interfaces.Litigation;
 
 /**
  * @Author HuZunJie

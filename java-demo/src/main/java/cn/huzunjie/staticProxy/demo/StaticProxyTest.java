@@ -1,7 +1,7 @@
 package cn.huzunjie.staticProxy.demo;
 
-import cn.huzunjie.staticProxy.interf.ClothFactory;
-import cn.huzunjie.staticProxy.interf.impl.*;
+import cn.huzunjie.staticProxy.interfaces.ClothFactory;
+import cn.huzunjie.staticProxy.interfaces.impl.*;
 import org.junit.jupiter.api.Test;
 
 /**

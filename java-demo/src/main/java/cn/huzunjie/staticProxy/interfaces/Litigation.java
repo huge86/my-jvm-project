@@ -1,4 +1,4 @@
-package cn.huzunjie.staticProxy.interf;
+package cn.huzunjie.staticProxy.interfaces;
 
 /**
  * @Author HuZunJie
