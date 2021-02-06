@@ -10,12 +10,19 @@
                            http://www.springframework.org/schema/aop
                            http://www.springframework.org/schema/aop/spring-aop.xsd"
 >
-    <!--组件扫描的配置细节,开启aop名称空间
+    <!--创建对象
     -->
-    <context:component-scan base-package="cn.huzunjie.spring5.demo.aop">
+    <bean id="book" class="cn.huzunjie.spring5.beans.Book"></bean>
+    <bean id="bookProxy" class="cn.huzunjie.spring5.demo.aop.BookProxy"></bean>
 
-    </context:component-scan>
-    <!--开启AspectJ生成代理对象
-    -->
-    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+    <!--配置AOP增强-->
+    <aop:config>
+        <!--配置切入点-->
+        <aop:pointcut id="p" expression="execution(* cn.huzunjie.spring5.beans.Book.buy(..))"/>
+        <!--配置切面-->
+        <aop:aspect ref="bookProxy">
+            <aop:before method="before" pointcut-ref="p"/>
+        </aop:aspect>
+
+    </aop:config>
 </beans>

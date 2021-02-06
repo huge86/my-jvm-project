@@ -6,9 +6,23 @@ package cn.huzunjie.spring5.beans;
  * @Version 1.0
  */
 
+
 public class Book {
+    private String id;
     private String name;
     private String author;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void buy(){
+        System.out.println("Book对象的buy方法===========");
+    }
 
     public String getName() {
         return name;
@@ -26,5 +40,12 @@ public class Book {
         this.author = author;
     }
 
-
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                '}';
+    }
 }
